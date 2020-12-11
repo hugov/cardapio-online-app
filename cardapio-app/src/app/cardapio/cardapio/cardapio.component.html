@@ -1,0 +1,8 @@
+<h1>Categorias</h1>
+
+<div class="card" *ngFor="let categoria of categorias" (click)="categoriaDetail(categoria.id)">
+    <img src="{{categoria.caminhoImagem}}" alt="Categoria de {{categoria.descricao}}">
+    <div class="container">
+      <h4><b>{{categoria.descricao}}</b></h4>
+    </div>
+</div>
